@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.binsoo;
 
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,10 +10,10 @@ import java.util.List;
 public class BinsooDao{
 
     @Autowired
-    SqlSession sqlSession;
+    private SqlSession sqlSession;
 
-    public List<Binsoo> getlist() {
-        return sqlSession.selectList("binsoo.getlist");
+    public List<BinsooVO> getlist() {
+        return sqlSession.selectList("binsoo.getList");
     }
 
 }

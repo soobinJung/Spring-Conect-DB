@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.binsoo;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class BinsooController {
 
-	BinsooService service;
+	private BinsooService service;
 	
 	@Autowired
 	public BinsooController( BinsooService service ) {
@@ -17,7 +17,7 @@ public class BinsooController {
 	}
 	
 	@GetMapping(value = "/binsoo/list")
-	public List<Binsoo> getlist()   {
+	public List<BinsooVO> getlist()   {
 		return service.getlist();
 	}
 }
