@@ -1,0 +1,6 @@
+com\example\demo\config\DBConfig.class
+com\example\demo\binsoo\BinsooVO.class
+com\example\demo\binsoo\BinsooDao.class
+com\example\demo\binsoo\BinsooService.class
+com\example\demo\binsoo\BinsooController.class
+com\example\demo\Demo3Application.class
